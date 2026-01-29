@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body:has(input[name="background-color"]:checked) {
+			background-color: darkslateblue;
+			color: white;
+		}
+		body:has(input[name="font-style"]:checked) {
+			font-style: italic;
+		}
+		body:has(option[value="red"]:checked) {
+			color: red;
+		}
+		body:has(option[value="blue"]:checked) {
+			color: blue;
+		}
+		body:has(option[value="yellow"]:checked) {
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div>Switch to dark theme : <input type="checkbox" name="background-color"></div>
+	<div>Switch to italic : <input type="checkbox" name="font-style"></div>
+	<select name="text-color">
+		<option value="black">Black</option>
+		<option value="red">Red</option>
+		<option value="blue">Blue</option>
+		<option value="yellow">Yellow</option>
+	</select>
+</body>
+</html>

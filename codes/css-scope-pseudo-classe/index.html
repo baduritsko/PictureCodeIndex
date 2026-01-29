@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		p { font-size: xx-large; }
+
+		/* @scope s'applique en plus donc les <p> auront une taille xx-large */
+		@scope(.dark-mode) {
+			p {	background-color: orange; }
+		}
+		@scope(.light-mode) {
+			p { color: blueviolet; }
+		}
+		@scope(#std-mode) {
+			p { text-decoration: underline ;}
+		}
+	</style>
+</head>
+<body>
+	<div class="dark-mode">
+		<p>Fleurs</p>
+	</div>
+	<div class="light-mode">
+		<p>Fruits</p>
+	</div>
+	<div id="std-mode">
+		<p>Véhicules</p>
+	</div>
+	<p>Humains</p>
+</body>
+</html>
