@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container {
+			width: 100%;
+			border: 1px solid black;
+			container-type: inline-size; /* important*/ 
+			container-name: monConteneur; /* nom du conteneur */
+		}
+		span {
+			background-color: purple;
+			color: orange;
+			font-size: large;
+		}
+		@container monConteneur (width > 800px) {
+			span {
+				color: limegreen;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<span>Hello</span>
+	</div>
+	<img src="Screenshot_20251016_075103.jpg" alt="source" width="300">
+</body>
+</html>

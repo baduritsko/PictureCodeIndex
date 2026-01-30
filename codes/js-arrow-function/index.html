@@ -4,7 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<script src="code.js"></script>
+	<script>
+	function run() {
+	const sum = (x, y) => x + y;
+	/*
+	équivalent à 
+		const sum = (x, y) => {
+			return x + y;
+		};
+	*/
+	document.getElementById("log-result").innerText = sum(18, 90);
+}
+
+	</script>
 	<style>
 		#log-result { background-color: black; color: white;}
 	</style>
@@ -13,7 +25,7 @@
 	<input type="button" value="Run" onclick="run();">
 	<div id="log-result">Waiting code run</div>
 
-
+	<img src="IMG_1730539741011.jpg" alt="source" width="300">
 
 </body>
 </html>

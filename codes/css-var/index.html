@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		:root {
+			--alertSuccess: greenyellow;
+			--alertDanger: orangered;
+		}
+		.alert {
+			border: 2px solid currentColor; /* currentColor se réfère à la couleur définit pour color */
+		}
+		.success {
+			color: var(--alertSuccess);
+		}
+		.alert--danger { /* le double tiret n'a pas d'intérêt particulier */
+			color: var(--alertDanger);
+		}
+	</style>
+</head>
+<body>
+	<div class="alert success">Pouik</div>
+	<div class="alert alert--danger">Pouik</div>
+	<img src="Screenshot_20251004_145823.jpg" alt="source" width="300">
+</body>
+</html>

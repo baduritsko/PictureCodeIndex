@@ -24,6 +24,12 @@ table {
 	border: 2px solid black;
 	width: 98%;
 }
+select {
+	border: 1px solid yellowgreen;
+	background-color: dimgray;
+	color: burlywood;
+	font-size: 1.2rem;
+}
 td, th {
 	border: 1px solid black;
 }
@@ -36,6 +42,13 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
 	background-color: rgb(85, 85, 108) ;
 }
+/* highligth <tr> based on a value selected in <select> */
+body:has(option[value="js"]:checked) tr.js { color: lime; }
+body:has(option[value="html"]:checked) tr.html { color: lime; }
+body:has(option[value="php"]:checked) tr.php { color: lime; }
+body:has(option[value="css"]:checked) tr.css { color: lime; }
+body:has(option[value="python"]:checked) tr.python { color: lime; }
+
 tr.js a {
 	background-color: #efd81d;
 	color: #000000;
